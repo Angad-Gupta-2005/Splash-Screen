@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SplashScreen</string>
+    <string name="org_name">Designed by Angad</string>
+    <string name="slogan">Keep Learning \nKeep Growing</string>
 </resources>
