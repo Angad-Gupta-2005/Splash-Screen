@@ -13,8 +13,7 @@
         android:theme="@style/Theme.SplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreenWithLoading"
-            android:launchMode="singleInstance"
+            android:name=".SplashScreenWithAnimation"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,15 +22,22 @@
             </intent-filter>
         </activity>
 
+<!--        With Loading    -->
+        <activity
+            android:name=".SplashScreenWithLoading"
+            android:exported="false"
+            android:launchMode="singleInstance"/>
+
         <!-- SplashScreen Activity -->
         <activity
             android:name=".SplashScreen"
-            android:exported="false"/>
+            android:exported="false" />
 
         <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>
