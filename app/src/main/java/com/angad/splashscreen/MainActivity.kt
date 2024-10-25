@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import cn.pedant.SweetAlert.SweetAlertDialog
 import com.angad.splashscreen.databinding.ActivityMainBinding
 import com.emreesen.sntoast.SnToast
 import com.emreesen.sntoast.Type
@@ -38,6 +39,33 @@ class MainActivity : AppCompatActivity() {
 //        On click show dialog button to display dialog
         onClickShowDialogButton()
 
+//        On click custom dialog button to display custom dialog
+        onClickCustomButtonDialog()
+
+    }
+
+    private fun onClickCustomButtonDialog() {
+        binding.customDialogBtn.setOnClickListener {
+            //   Dialog of type Success
+            SweetAlertDialog(this,SweetAlertDialog.SUCCESS_TYPE)
+                .setTitleText("Good Job")
+                .setContentText("You clicked the Custom Button")
+                .show()
+
+            //   Dialog of type Failure
+//            SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+//                .setTitleText("Bad Job")
+//                .setContentText("You clicked the Custom Button")
+//                .show()
+
+            //   Dialog of type progress
+//            SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE)
+//                .setTitleText("Loading")
+////                .setContentText("You clicked the Custom Button")
+//                .show()
+
+            //  Rest of the dialog type and properties we can show from sweet alert android github page.
+        }
     }
 
     //    Implementing the alert dialog box in android

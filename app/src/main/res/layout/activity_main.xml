@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Fancy Toast"
+        android:text="@string/fancy_toast"
         app:layout_constraintEnd_toEndOf="@+id/defaultT"
         app:layout_constraintStart_toStartOf="@+id/defaultT"
         app:layout_constraintTop_toBottomOf="@+id/defaultT" />
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:backgroundTint="#08641C"
-        android:text="Menu Demo"
+        android:text="@string/menu_demo"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -55,13 +55,26 @@
         android:id="@+id/alertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="#D9991A"
-        android:text="Show Dialog"
+        android:text="@string/default_dialog"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuBtn" />
+
+    <Button
+        android:id="@+id/customDialogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#187E07"
+        android:text="@string/custom_dialog"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alertBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

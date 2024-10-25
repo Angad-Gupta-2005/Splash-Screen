@@ -59,4 +59,7 @@ dependencies {
 
 //    custom toast library dependency
     implementation(libs.android.custom.toast.message)
+
+//    Sweet AlertDialog box dependency for custom dialog box
+    implementation("com.github.f0ris.sweetalert:library:1.5.6")
 }
