@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
     //    Creating binding instance
     private lateinit var binding: ActivityMainBinding
 
+//    Creating object of CustomMenu class
+    private val customMenu = com.angad.splashscreen.CustomMenu()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,14 +26,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 //        On click default toast button
-        onClickDefaultToast()
+        onCLickCustomToast()
 
 //        On click custom toast button
-        onCLickCustomButtonToast()
+        onClickFancyButtonToast()
+
+//        On click menu demo button
+        onClickMenuDemoButton()
 
     }
 
-    private fun onCLickCustomButtonToast() {
+//    For menu
+    private fun onClickMenuDemoButton() {
+        binding.menuBtn.setOnClickListener {
+            customMenu.showMenu(this, it)
+        }
+    }
+
+    private fun onClickFancyButtonToast() {
         binding.customT.setOnClickListener {
             FancyToast.makeText(
                 this,
@@ -42,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun onClickDefaultToast() {
+    private fun onCLickCustomToast() {
         binding.defaultT.setOnClickListener {
 //            Toast.makeText(this, "This is a default toast", Toast.LENGTH_SHORT).show()
             SnToast.Builder()

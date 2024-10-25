@@ -38,4 +38,17 @@
         app:layout_constraintStart_toStartOf="@+id/defaultT"
         app:layout_constraintTop_toBottomOf="@+id/defaultT" />
 
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#08641C"
+        android:text="Menu Demo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
