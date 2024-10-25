@@ -53,4 +53,10 @@ dependencies {
 
 //    lottie animation dependencies
     implementation(libs.lottie)
+
+//    fancy toast library dependency
+    implementation(libs.fancytoast)
+
+//    custom toast library dependency
+    implementation(libs.android.custom.toast.message)
 }

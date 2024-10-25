@@ -16,6 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+//            for custom toast
+            url = uri("https://jitpack.io")
+        }
     }
 }
 
